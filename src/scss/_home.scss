@@ -1,0 +1,57 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 700px;
+
+  background-image: linear-gradient(to bottom, $grey-light, white);
+
+  &__header {
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+
+  &__sub-header {
+    font-weight: lighter;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  &__body {
+    margin-top: 50px;
+    &__uploader {
+      background-color: $blue-base;
+      box-shadow: 3px 3px 5px $blue-light;
+      padding: 10px 15px;
+
+      border-radius: 5px;
+
+      font-size: 30px;
+
+      color: white;
+
+      transition: 0.3s;
+
+      svg {
+        padding-right: 10px;
+        border-right: 1px solid $blue-light;
+      }
+
+      span {
+        padding-left: 10px;
+        letter-spacing: 2px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+}

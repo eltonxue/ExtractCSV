@@ -1,0 +1,23 @@
+.data-table {
+  border: 1px solid black;
+
+  &__row {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid grey;
+
+    &__cell {
+      font-family: Times;
+      font-size: 22px;
+      border-right: 2px solid grey;
+      padding: 50px;
+
+      &__notes {
+        width: 100%;
+        resize: none;
+        font-size: 20px;
+        height: 200px;
+      }
+    }
+  }
+}
